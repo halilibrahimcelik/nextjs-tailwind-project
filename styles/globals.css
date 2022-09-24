@@ -5,3 +5,6 @@ html{
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
 }
+.custom-img{
+  background-image: url("https://images.unsplash.com/photo-1562832135-14a35d25edef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1545&q=80");
+}
