@@ -17,8 +17,10 @@ const Slider = ({ slides }) => {
     return null;
   }
   return (
-    <section id="gallery">
-      <h1>Gallery</h1>
+    <section className="max-w-[1140px] mx-auto  " id="gallery">
+      <h1 className="  text-2xl font-bold text-center w-full md:text-left p-4">
+        Gallery
+      </h1>
       <main>
         {imageData.map((image, index) => {
           return (
@@ -26,8 +28,8 @@ const Slider = ({ slides }) => {
               key={index}
               className={
                 index === current
-                  ? "opacity-[1]  ease-out duration-300  relative flex justify-center"
-                  : "opacity-0 relative flex justify-center"
+                  ? "opacity-[1] shadow-customShadow    rounded-3xl ease-out duration-300  relative flex justify-center"
+                  : "opacity-0  rounded-3xl relative flex justify-center"
               }
             >
               <FaArrowCircleLeft
@@ -44,6 +46,7 @@ const Slider = ({ slides }) => {
                   height="600"
                   objectFit="cover"
                   alt="images"
+                  className="rounded-3xl "
                 />
               )}
               <FaArrowCircleRight
