@@ -66,9 +66,11 @@ const Navbar = () => {
         {/* Mobile Menu */}
 
         <div
-          className={`md:hidden absolute top-0  left-${
-            showNav ? "[-100px]" : "[-100%]"
-          } w-full h-screen text-center bg-black/90  pt-10 ease-in duration-300`}
+          style={{ left: showNav ? "-120px" : "-100%" }}
+          className={`md:hidden absolute top-0  
+
+          w-full h-screen text-center
+           bg-black/90  pt-10 ease-in duration-300`}
         >
           <ul className=" flex flex-col gap-3  w-full justify-center">
             <li className="py-2 text-2xl text-center hover:text-gray-500 border-b-[1px]">
