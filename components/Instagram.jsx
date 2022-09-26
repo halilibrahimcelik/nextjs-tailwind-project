@@ -5,11 +5,14 @@ import image3 from "../public/ig-img-3.jpeg";
 import image4 from "../public/ig-img-4.jpeg";
 import image5 from "../public/ig-img-5.jpeg";
 import InstagramImg from "./InstagramImg";
+import TypingAnimation from "./TypingAnimation";
+
 const Instagram = () => {
   return (
     <section className="max-w-[1240px]  mx-auto text-center py-24 ">
-      <p>Follow us on Instagram</p>
-      <p>@Captur the Moment</p>
+      <div className=" font-sans font-bold text-2xl my-3  p-4 text-transparent bg-gradient-to-r from-pink-800  via-indigo-500 to-cyan-400 bg-clip-text">
+        <TypingAnimation />
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-customGrid   lg:grid-cols-5 gap-2 p-4">
         <InstagramImg socialImg={image1} colSize={"col-span-1"} />
