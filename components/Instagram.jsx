@@ -11,12 +11,15 @@ const Instagram = () => {
       <p>Follow us on Instagram</p>
       <p>@Captur the Moment</p>
 
-      <div className="grid w-screengird-cols-2 md:grid-cols-3 md:row-start-1   items-center  lg:grid-cols-5 gap-2 p-4">
-        <InstagramImg socialImg={image1} />
-        <InstagramImg socialImg={image2} />
-        <InstagramImg socialImg={image3} />
-        <InstagramImg socialImg={image4} />
-        <InstagramImg socialImg={image5} />
+      <div className="grid grid-cols-1 md:grid-cols-customGrid    lg:grid-cols-5 gap-2 p-4">
+        <InstagramImg socialImg={image1} colSize={"col-span-1"} />
+        <InstagramImg socialImg={image2} colSize={"col-span-1"} />
+        <InstagramImg socialImg={image3} colSize={"col-span-1"} />
+        <InstagramImg socialImg={image4} colSize={"col-start-0% col-end-50%"} />
+        <InstagramImg
+          socialImg={image5}
+          colSize={" col-start-50% col-end-100%"}
+        />
       </div>
     </section>
   );
