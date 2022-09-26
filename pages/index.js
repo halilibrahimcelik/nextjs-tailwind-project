@@ -2,7 +2,7 @@ import Head from "next/head";
 import Hero from "../components/Hero";
 import Instagram from "../components/Instagram";
 import Slider from "../components/Slider";
-import { imageData } from "../pages/utils/sliderData";
+import { imageData } from "../utils/sliderData";
 export default function Home() {
   return (
     <div>

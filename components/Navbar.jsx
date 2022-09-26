@@ -24,9 +24,9 @@ const Navbar = () => {
   return (
     <nav
       style={{ backgroundColor: `${color}` }}
-      className="fixed left-0 top-0 w-full z-10  p-4"
+      className="fixed left-0 top-0 w-full z-10  p-4 ease-out duration-300"
     >
-      <div className="max-w-[1240px] m-auto flex justify-around text-white items-center ">
+      <div className="max-w-[1240px] m-auto flex justify-around text-white items-center ease-in duration-300 ">
         <Link href="/">
           <h1
             style={{ color: `${textColor}` }}
@@ -46,7 +46,7 @@ const Navbar = () => {
             <Link href="/#gallery">Gallery </Link>
           </li>
           <li>
-            <Link href="/portfolio">Work </Link>
+            <Link href="/work">Work </Link>
           </li>
           <li>
             <Link href="/contact">Contact </Link>
@@ -73,17 +73,29 @@ const Navbar = () => {
            bg-black/90  pt-10 ease-in duration-300`}
         >
           <ul className=" flex flex-col gap-3  w-full justify-center">
-            <li className="py-2 text-2xl text-center hover:text-gray-500 border-b-[1px]">
+            <li
+              onClick={handleNav}
+              className="py-2 text-2xl text-center hover:text-gray-500 border-b-[1px]"
+            >
               <Link href="/">Home </Link>
             </li>
-            <li className="py-2 text-2xl hover:text-gray-500 border-b-[1px]">
+            <li
+              onClick={handleNav}
+              className="py-2 text-2xl hover:text-gray-500 border-b-[1px]"
+            >
               <Link href="/#gallery">Gallery </Link>
             </li>
-            <li className="py-2 text-2xl hover:text-gray-500 border-b-[1px]">
-              <Link href="/portfolio">Work </Link>
+            <li
+              onClick={handleNav}
+              className="py-2 text-2xl hover:text-gray-500 border-b-[1px]"
+            >
+              <Link href="/work">Work </Link>
             </li>
 
-            <li className="py-2 text-2xl hover:text-gray-500 border-b-[1px]">
+            <li
+              onClick={handleNav}
+              className="py-2 text-2xl hover:text-gray-500 border-b-[1px]"
+            >
               <Link href="/contact">Contact </Link>
             </li>
           </ul>

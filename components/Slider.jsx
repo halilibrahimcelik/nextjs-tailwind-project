@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { imageData } from "../pages/utils/sliderData";
+import { imageData } from "../utils/sliderData";
 import Image from "next/image";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 const Slider = ({ slides }) => {
